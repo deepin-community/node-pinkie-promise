@@ -1,0 +1,22 @@
+Source: node-pinkie-promise
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-pinkie <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-pinkie-promise
+Vcs-Git: https://salsa.debian.org/js-team/node-pinkie-promise.git
+Homepage: https://github.com/floatdrop/pinkie-promise
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-pinkie-promise
+Architecture: all
+Depends: ${misc:Depends}
+ , node-pinkie
+Description: ES2015 Promise ponyfill
+ Node.js is an event-based server-side JavaScript engine.

@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-pinkie-promise-$1/ \
+ https://github.com/floatdrop/pinkie-promise/tags .*/archive/.*/v?([\d\.]+).tar.gz

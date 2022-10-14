@@ -1,0 +1,36 @@
+node-pinkie-promise (2.0.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Set debhelper-compat version in Build-Depends.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-pinkie.
+    + node-pinkie-promise: Drop versioned constraint on node-pinkie in Depends.
+  * Remove empty leading paragraph in Description.
+  * Bump debhelper from old 9 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Mark test dependencies with <!nocheck>
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Tue, 09 Nov 2021 12:48:12 +0100
+
+node-pinkie-promise (2.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #845338)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 22 Nov 2016 22:20:54 +0530
